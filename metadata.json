@@ -1,0 +1,6 @@
+{
+  "name": "Epic Touch",
+  "description": "Sistema completo para controle de Ordens de Serviço (OS) e gestão de assistência técnica de celulares, computadores e eletrônicos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

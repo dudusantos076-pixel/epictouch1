@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@media print {
+  body, html {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Keep #root visible during printing but eliminate background and height constraints */
+  #root, #root > div {
+    display: block !important;
+    background: transparent !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* Hide general web layout headers, sidebar, navigations, and buttons */
+  aside, nav, header, footer, button, .no-print, #role-selector-container {
+    display: none !important;
+  }
+
+  /* Target and hide screen-only views and contents so only print-area is rendered */
+  main > :not(#os-view-container):not(#laudos-view-container):not(#tech-panel-container),
+  #os-view-container > :not(#print-area),
+  #laudos-view-container > :not(#print-area),
+  #tech-panel-container > :not(#print-area) {
+    display: none !important;
+  }
+
+  /* Display print area as block, taking full page */
+  #print-area {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1.5cm !important;
+    box-sizing: border-box !important;
+    background: white !important;
+    color: black !important;
+    z-index: 9999999 !important;
+  }
+
+  #print-area .grid {
+    display: grid !important;
+  }
+
+  #print-area .flex {
+    display: flex !important;
+  }
+}

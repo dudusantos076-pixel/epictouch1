@@ -1,0 +1,70 @@
+{
+  "clients": [],
+  "parts": [],
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Gabriel Admin",
+      "role": "admin",
+      "username": "dudusantos076@gmail.com",
+      "password": "hedshot23",
+      "storeName": "joao assistencia ",
+      "storeCnpjCpf": "00.000.000/0001-00",
+      "storePixKey": "dudusantos076@gmail.com",
+      "planType": "pro",
+      "planStatus": "active"
+    },
+    {
+      "id": "user-2",
+      "name": "Marcia Gerente",
+      "role": "manager",
+      "username": "gerente",
+      "password": "123",
+      "storeName": "Epic Touch",
+      "storeCnpjCpf": "00.000.000/0001-00",
+      "storePixKey": "dudusantos076@gmail.com",
+      "planType": "pro",
+      "planStatus": "active"
+    },
+    {
+      "id": "user-3",
+      "name": "Carlos Técnico",
+      "role": "tech",
+      "username": "carlos",
+      "password": "123",
+      "storeName": "Epic Touch",
+      "storeCnpjCpf": "00.000.000/0001-00",
+      "storePixKey": "dudusantos076@gmail.com",
+      "planType": "pro",
+      "planStatus": "active"
+    },
+    {
+      "id": "user-4",
+      "name": "Amanda Técnica",
+      "role": "tech",
+      "username": "amanda",
+      "password": "123",
+      "storeName": "Epic Touch",
+      "storeCnpjCpf": "00.000.000/0001-00",
+      "storePixKey": "dudusantos076@gmail.com",
+      "planType": "pro",
+      "planStatus": "active"
+    },
+    {
+      "id": "user-5",
+      "name": "Atendente Bia",
+      "role": "attendant",
+      "username": "bia",
+      "password": "123",
+      "storeName": "Epic Touch",
+      "storeCnpjCpf": "00.000.000/0001-00",
+      "storePixKey": "dudusantos076@gmail.com",
+      "planType": "pro",
+      "planStatus": "active"
+    }
+  ],
+  "orders": [],
+  "financial": [],
+  "laudos": [],
+  "messages": []
+}
