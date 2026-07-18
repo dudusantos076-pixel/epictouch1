@@ -1267,4 +1267,12 @@ async function startServer() {
   });
 }
 
-startServer();
+if (!process.env.VERCEL) {
+  startServer();
+} else {
+  initializeDatabase().catch(err => {
+    console.error("Erro ao inicializar banco de dados no Vercel:", err);
+  });
+}
+
+export default app;
